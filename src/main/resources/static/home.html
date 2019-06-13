@@ -1,0 +1,27 @@
+<#ftl>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home.html</title>
+</head>
+<script src="/boot/js/jquery.min.js"></script>
+    <#include "/inc/include.html"><#-- 以模板路径为根路径 -->
+    <h1>${freemarker}</h1>
+    <#if isOk >
+        <h1>isOk</h1>
+    </#if>
+    <#list msgs>
+    <ul>
+        <#items as msg>
+        <li>${msg.title}-${msg.content}-${msg.createTime?date}</li>
+        </#items>
+    </ul>
+    </#list>
+    <h1>${tbMsg[0]}</h1>
+    <h1>${tbMsg[1]}</h1>
+    <h1>${tbMsg.title}</h1>
+    <h1>${now?datetime}</h1>
+    <h1>OK static/home.html</h1>
+</body>
+</html>

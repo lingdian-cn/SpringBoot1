@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>templates.html</title>
+</head>
+<script src="/boot/js/jquery.min.js"></script>
+<body>
+<h1 class="freemarker">${freemarker}</h1>
+<h1 class="thymeleaf" th:text="${thymeleaf}">111111</h1>
+<h1 class="ok">OK public/templates.html</h1>
+</body>
+<style>
+    .freemarker {
+        color: blue;
+    }
+    .thymeleaf {
+        color: red;
+    }
+    .ok {
+        color: bisque;
+    }
+</style>
+</html>
